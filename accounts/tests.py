@@ -5,8 +5,9 @@ from django.contrib.auth import get_user_model
 
 class SignUpPageTests(TestCase):
 
-    username = 'myusername'
+    username = 'username'
     email = 'myusername@gmail.com'
+
     def test_signup_url_by_name(self):
         response = self.client.get(reverse('signup'))
         self.assertEqual(response.status_code, 200)
