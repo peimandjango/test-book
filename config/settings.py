@@ -43,6 +43,8 @@ INSTALLED_APPS = [
 
     'accounts',
     'pages',
+    'books',
+
 
 
 ]
@@ -143,7 +145,7 @@ CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap4"
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 
-#Email Config
+# Email Config
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 
