@@ -6,5 +6,9 @@ from .models import BOOK
 
 class BookListView(generic.ListView):
     model = BOOK
-    template_name = 'books/book_list'
+    template_name = 'books/book_list.html'
     context_object_name = 'books'
+
+class BookDetailView(generic.DetailView):
+    model = BOOK
+    template_name = 'books/book_detail.html'
