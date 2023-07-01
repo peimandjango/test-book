@@ -1,0 +1,14 @@
+{% extends '_base.html' %}
+
+{% block page_title %} Update {{ book.title }}{% endblock page_title %}
+
+
+{% block content %}
+    <h2>Update Book</h2>
+    <form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">save</button>
+</form>
+
+{% endblock content %}
