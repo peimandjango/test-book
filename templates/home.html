@@ -5,6 +5,9 @@
 
 {% block content %}
   <h1>Home Page</h1>
+    <br>
+    <a href="{% url 'book_list' %}">کتابخانه</a>
+    <br>
 
     {% if user.is_authenticated %}
         <P> welcome {{ user.username }} <a href="{% url 'logout' %}">Logout</a></P>

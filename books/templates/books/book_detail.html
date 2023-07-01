@@ -10,5 +10,7 @@
     <p>{{ book.author }}</p>
     <h4>{{ book.price }}</h4>
 
-
+    <div>
+    <a href="{% url 'book_list' %}">برگشت به کتاب خانه</a>
+    </div>
 {% endblock content %}
